@@ -28,7 +28,7 @@ The software has been tested with Ros Melodic under Ubuntu 18.04.
 
 Create a new catkin workspace, configure it to build in release, download all dependencies with wstool and build ``perceptive_mpc``.
 ```
-sudo apt install python-catkin-tools libglpk-dev python-wstool -y
+sudo apt install python3-catkin-tools libglpk-dev python3-wstool -y
 source /opt/ros/melodic/setup.bash
 mkdir perceptive_mpc_ws
 cd perceptive_mpc_ws
@@ -36,7 +36,7 @@ mkdir src
 catkin init
 catkin config --extend /opt/ros/melodic --cmake-args -DCMAKE_BUILD_TYPE=Release
 cd src
-git clone https://github.com/leggedrobotics/perceptive_mpc.git
+git clone https://github.com/peleito/perceptive_mpc.git
 wstool init . ./perceptive_mpc/perceptive_mpc_https.rosinstall
 catkin build perceptive_mpc
 ```
