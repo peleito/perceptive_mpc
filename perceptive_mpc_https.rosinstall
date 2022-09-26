@@ -28,7 +28,7 @@
 - git:
     local-name: voxblox
     uri: https://github.com/leggedrobotics/voxblox.git
-    version: feature/cache_gradient_hessian
+    version: feature/noetic/new_abort_criterion_for_fast_integrator
 - git:
     local-name: ocs2
     uri: https://github.com/leggedrobotics/ocs2.git
